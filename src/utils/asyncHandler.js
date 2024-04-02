@@ -1,19 +1,19 @@
-const asycnHandler = (requestHandler)=>{
-    (req,res,next)=>{
+const asyncHandler = (requestHandler)=>{
+    return (req,res,next)=>{
         Promise.resolve(requestHandler(req,res,next)).
         catch(err=>next(err))
     }
 }
 
-export {asycnHandler}
+export default asyncHandler
 
 
-// const asycnHandler = ()=>{}
-// const asycnHandler = (func)=>{()=>{}}
-// const asycnHandler = (func)=>()=>{}
-// const asycnHandler = (func)=> async ()=>{}
+// const asyncHandler = ()=>{}
+// const asyncHandler = (func)=>{()=>{}}
+// const asyncHandler = (func)=>()=>{}
+// const asyncHandler = (func)=> async ()=>{}
 
-// const asycnHandler = (fn)=> async (req,res,next)=>{
+// const asyncHandler = (fn)=> async (req,res,next)=>{
 //     try{ 
 //         await fn(req,res,next)
 //     }
