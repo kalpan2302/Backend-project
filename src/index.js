@@ -8,7 +8,7 @@ dotenv.config({
 
 connectDB()
 .then(()=>{
-    app.on("error",(error)=>{
+    app.on("error",(error)=>{               // on occuring of error the callback is fire
         console.log("ERROR : ",error)
         throw error
     })
