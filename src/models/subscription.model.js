@@ -12,3 +12,6 @@ const subscriptionSchema = new Schema({
 },{timestamps:true}) 
 
 export const Subscription = mongoose.model("Subscription",subscriptionSchema)
+
+
+// youtube video(number 19) of chai aur code to understand the subscription and channel schema and how number of subscriber and channel which was subcribed is manage ..
