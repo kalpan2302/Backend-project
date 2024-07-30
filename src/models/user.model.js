@@ -85,4 +85,45 @@ userSchema.methods.generateRefreshToken = function (){
 }
 
 
-export const  User = mongoose.model("User",userSchema)
+
+export const  User = mongoose.model("User",userSchema)   // create collection
+
+
+// to insret data into User
+
+/*
+const userData =  new User({
+        username : "kalpan ",
+        email : "kalpan.s.23@gmail.com",
+        fullname : "Bariya",
+        avatar : "https://cloud.com",
+        passwoard : "12333"
+})
+
+userData.save();
+*/
+
+
+// we need to put it async await ...
+
+/*
+const insertdata = async ()=>{
+    try{
+        const userData =  new User({
+            username : "kalpan ",
+            email : "kalpan.s.23@gmail.com",
+            fullname : "Bariya",
+            avatar : "https://cloud.com",
+            passwoard : "12333"
+    })
+        const result = await userData.save();
+        console.log(result);
+    }
+    catch(err){
+        console.log(err);
+    }
+}
+
+insertdata();
+*/
+

@@ -6,6 +6,8 @@ dotenv.config({
     path : './.env'
 })
 
+
+
 connectDB()
 .then(()=>{
     app.on("error",(error)=>{               // on occuring of error the callback is fire
