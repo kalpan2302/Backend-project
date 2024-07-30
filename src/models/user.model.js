@@ -177,4 +177,47 @@ readData();
 
 */
 
+// update document
 
+/*
+
+const updateData = async (_id)=>{
+    try{
+        const result = await User.findByIdAndUpdate({_id},{   // wee can use update also that will not show updated data where as findbyid show previous data and update it
+            $set : {
+               name :"kp" 
+            }
+        },
+        {
+            useFindAndModify : false
+        }
+    );
+        console.log(result)
+    }
+    catch(err){
+        console.log(err)
+    }
+}
+
+updateData("id");
+
+*/
+
+
+// delete the document
+
+/*
+
+const deleteData = async (_id)=>{
+    try{
+        const result = await User.deleteMany({_id}); // we can use findByIdAndDelete also
+        console.log(result)
+    }
+    catch(err){
+        console.log(err)
+    }
+}
+
+deleteData("id");
+
+*/
