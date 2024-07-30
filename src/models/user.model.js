@@ -127,3 +127,37 @@ const insertdata = async ()=>{
 insertdata();
 */
 
+
+// insert many document into collection
+
+/*
+const insertdata = async ()=>{
+    try{
+        const userData =  new User({
+            username : "kalpan ",
+            email : "kalpan.s.23@gmail.com",
+            fullname : "Bariya",
+            avatar : "https://cloud.com",
+            passwoard : "12333"
+        })
+
+        const user1Data =  new User({
+            username : "kalpan2 ",
+            email : "kalpan2.s.23@gmail.com",
+            fullname : "Bariya2",
+            avatar : "https://cloud.com",
+            passwoard : "123334"
+        })
+
+        const result = await User.insertMany([userData,user1Data]);
+        console.log(result);
+    }
+    catch(err){
+        console.log(err);
+    }
+}
+
+*/
+
+
+
