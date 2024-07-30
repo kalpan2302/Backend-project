@@ -160,4 +160,21 @@ const insertdata = async ()=>{
 */
 
 
+// read data from collection
+
+/*
+const readData = async ()=>{
+    try{
+        const result = await User.find({name:"kalpan"}).select({_id:0,email:1}).limit(1);
+        console.log(result)
+    }
+    catch(err){
+        console.log(err)
+    }
+}
+
+readData();
+
+*/
+
 
